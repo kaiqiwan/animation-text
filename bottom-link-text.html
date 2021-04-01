@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁連接動態特效樣式</title>
+    <style>
+        .schedule .nav-pills .nav-link,
+        .schedule .nav-pills .nav-link-dropdown {
+            background: #4f64b1;
+            text-align: center;
+        }
+
+        .schedule .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link,
+        .schedule .nav .nav-item a:hover {
+            background: #95589e;
+        }
+
+        .nav .nav-item {
+            margin: 0 15px;
+            height: 100px;
+            width: 250px;
+            background-color: cornflowerblue;
+            border-radius: 10px 10px 10px 10px;
+            float: left;
+            line-height: 30px;
+            padding: 0px;
+            text-align: center;
+            list-style: none;
+        }
+
+        .mb-3 {
+            margin-bottom：1rem ！important;
+        }
+
+        .nav .navbar-light .navbar-nav .nav-link,
+        .nav .navbar-light .navbar-nav .nav-link-dropdown {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover,
+        .nav .navbar-light .navbar-nav .nav-link-dropdown:focus,
+        .navbar-light .navbar-nav .nav-link-dropdown:hover {
+            color: #ccc;
+            outline-width: inherit;
+            outline-offset: inherit;
+            outline-style: inherit;
+            outline-color: rgba(0, 0, 0, 0);
+        }
+
+        .nav {
+            font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei";
+            transition: 0.2s;
+            box-sizing: border-box;
+
+        }
+
+        .myIcon1 {
+            position: relative;
+            top: 10px;
+            left: -5px;
+        }
+
+        /* hover: 設定當滑鼠蓋在連接上面時，該連接的樣式。 */
+        .nav-item:hover {
+            background-color: rgb(163, 64, 209);
+            text-decoration: underline;
+        }
+
+        /* link: 設定當連接過去的網頁尚未被看過時，該連接的樣式。 */
+        .nav-item:link {
+            color: darkslategray;
+        }
+
+        /* visited: 設定當連接過去的網頁已經看過時，該連接的樣式。 */
+        .nav-item:visited {
+            color: dimgrey;
+        }
+
+        /* active: 設定當連接被點擊時，該連接的樣式。 */
+        .nav-item:active {
+            color: goldenrod;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="pill" href="#pills-01" role="tab" aria-selected="true">5G通訊
+                /<br />邊緣運算</a>
+
+        </li>
+        <li class="nav-item" role="presentation">
+            <img class="myIcon1" src="img/car.png" alt="">
+            <a class="nav-link" data-toggle="pill" href="#pills-02" role="tab" aria-selected="false">AI晶片</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="pill" href="#pills-03" role="tab" aria-selected="false">自駕車 /<br />車聯網</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="pill" href="#pills-04" role="tab" aria-selected="false">資訊安全</a>
+        </li>
+    </ul>
+</body>
+
+</html>
